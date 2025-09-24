@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renjith Madapattil | Senior Manager Finance</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding-top: 60px; /* Space for fixed navbar */
+            background-color: #e9f2f9; /* Light blue background */
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #2c3e50; /* Dark blue */
+            color: #fff;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav .brand {
+            display: flex; /* Make the brand container a flexbox */
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-left: 20px; /* Add space between text and dropdown */
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #34495e; /* Slightly lighter dark blue */
+            border-radius: 4px;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #34495e; /* Darker blue for dropdown */
+            min-width: 220px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            top: 100%; /* Position below the main link */
+            right: 0; /* Align dropdown to the right of the list item */
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #556c80; /* Even lighter blue on hover */
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        /* Profile & About Me Section */
+        .profile-about-container {
+            display: flex;
+            align-items: stretch;
+            gap: 30px;
+            margin-top: 20px;
+            background: #fff;
+            padding: 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .profile-photo {
+            width: 250px;
+            height: auto;
+            object-fit: cover;
+            flex-shrink: 0;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            box-shadow: none;
+        }
+        .about-me-content {
+            flex-grow: 1;
+            padding: 30px;
+        }
+
+        .section {
+            background: #fff;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #007bff;
+            border-bottom: 2px solid #a7d3f1;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .project-container {
+            background: #fdfdfd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #cce0f0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .project-container h3 {
+            color: #0056b3;
+            margin-top: 0;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e9f7ff;
+            margin: 5px 0;
+            padding: 8px;
+            border-left: 4px solid #007bff;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 30px;
+            background-color: #2c3e50;
+            color: #f0f0f0;
+            font-size: 0.9em;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+        }
+        footer a {
+            color: #87ceeb;
+            text-decoration: none;
+            display: inline-flex; /* Use flexbox for alignment */
+            align-items: center;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            background-size: cover;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="brand">
+            Renjith Madapattil | Senior Manager Finance
+            <ul>
+                <li class="dropdown">
+                    <a href="#projects-section">Projects &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="#forecasting-project">Forecasting Project Cost and Revenue</a>
+                        <a href="#bad-debt-model">Bad Debt Model</a>
+                        <a href="#rpa-deployment">RPA Deployment</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <div class="profile-about-container">
+            <img src="images/renjith.jpeg" alt="Renjith Madapattil" class="profile-photo">
+            <div class="about-me-content section">
+                <h2>About Me</h2>
+                <p>I am a <strong>Senior Manager of Finance</strong> with extensive experience driving <strong>FP&A (Financial Planning & Analysis) strategies</strong> that directly align with corporate goals. I'm passionate about partnering with business leaders to develop roadmaps for FP&A teams, managing complex transformation projects from inception to completion, and using data to deliver high-quality, on-demand financial KPIs.</p>
+                <p>My expertise includes <strong>data modeling</strong> and creating self-service applications with tools like <strong>Office 365</strong> and <strong>RPA</strong>. I've worked with a variety of clients across multiple geographies, consistently delivering high-accuracy results under tight deadlines. I also specialize in consulting to standardize, automate, and deploy high-value products, and I have a strong background in <strong>advanced analytics</strong> using statistical models like predictive analysis and probabilities.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Professional Toolkit</h2>
+            <ul>
+                <li>FP&A Strategic Partnering</li>
+                <li>Managing High-Impact Transformation Projects</li>
+                <li>Automation</li>
+                <li>Data Science</li>
+                <li>Data Modelling</li>
+            </ul>
+        </div>
+
+        <div class="section" id="projects-section">
+            <h2>Projects</h2>
+            
+            <div class="project-container" id="forecasting-project">
+                <h3>Forecasting Project Cost and Revenue</h3>
+                <p><strong>Client:</strong> Honeywell Building Solutions</p>
+                <p>Developed a self-service model to track actual costs against budget and forecast future revenue. This was delivered in Excel using advanced formulas and pivot tables, and it employed probability calculations to analyze past trends and provide accurate forecasts.</p>
+            </div>
+
+            <div class="project-container" id="bad-debt-model">
+                <h3>Bad Debt Model</h3>
+                <p>This project involved using <strong>Logistic Regression</strong> to predict the possibility of an overdue payment turning into bad debt. The model was developed in <strong>Python</strong> and deployed in <strong>Azure</strong>, connecting to a data lake. It provides a fully automated, on-demand report that analyzes customer payment trends and generates a probability score for each overdue account.</p>
+            </div>
+
+            <div class="project-container" id="rpa-deployment">
+                <h3>RPA Deployment</h3>
+                <p>I led a team of 16 with 2 team leads and 14 developers to deploy Robotic Process Automation (RPA) across the FP&A CoE. My responsibilities included feasibility analysis, creating a project pipeline, and project management from inception to go-live. I acted as the key liaison between operations and developers, and I reported on the project's progress, hours saved, and overall dollar impact to management.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>
+            <a href="mailto:renjith.madapat@gmail.com">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" class="icon">renjith.madapattil@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/renjith-madapattil/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="icon">linkedin.com/in/renjith-madapattil/
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
